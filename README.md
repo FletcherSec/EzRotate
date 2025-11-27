@@ -193,7 +193,7 @@ Reference: [NIST SP 800-63B Digital Identity Guidelines](https://pages.nist.gov/
 
 ## 📝 Log Files
 
-Log files are automatically saved to the desktop with sequential numbering:
+Log files are automatically saved to the same directory as EzRotate.ps1 with sequential numbering:
 
 - **Encrypted TXT**: `PasswordRotation_Encrypted_1.txt`, `PasswordRotation_Encrypted_2.txt`, etc.
 - **Encrypted CSV**: `PasswordRotation_Encrypted_1.csv`, `PasswordRotation_Encrypted_2.csv`, etc.
