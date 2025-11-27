@@ -45,37 +45,37 @@ EzRotate is a PowerShell-based password rotation tool designed to help system ad
 ## 📸 Screenshots
 
 ### Main Menu
-![Main Menu](image6.png)
+![Main Menu](readmeimages/image6.png)
 
 The main menu provides six core functions plus a quit option, making it easy to navigate through different password rotation tasks.
 
 ### Bulk Password Rotation
-![Bulk Rotation](image3.png)
+![Bulk Rotation](readmeimages/image3.png)
 
 Rotate passwords for multiple users at once with scope options (enabled users only or all users). The script provides real-time feedback on successful rotations, failures, and protected accounts.
 
 ### Rotation Summary
-![Rotation Summary](image2.png)
+![Rotation Summary](readmeimages/image2.png)
 
 After bulk rotation, view a summary of successful rotations, failed attempts, and skipped protected accounts.
 
 ### Export Options
-![Export Options](image2.png)
+![Export Options](readmeimages/image2.png)
 
 Choose between XOR encrypted exports (for obfuscation) or plaintext exports, with options for TXT files, CSV files, or both.
 
 ### Encrypted Log Output
-![Encrypted Log](image.png)
+![Encrypted Log](readmeimages/image.png)
 
 Encrypted logs use XOR encryption with Base64 encoding for credential obfuscation, protecting against casual viewing.
 
 ### Plaintext Log Output
-![Plaintext Log](image4.png)
+![Plaintext Log](readmeimages/image4.png)
 
 Plaintext logs provide clear, readable records of password rotations with timestamps for audit purposes.
 
 ### Password Rotation Confirmation
-![Rotation Confirmation](image5.png)
+![Rotation Confirmation](readmeimages/image5.png)
 
 Individual account rotations show the new password and provide immediate feedback on success.
 
@@ -218,33 +218,3 @@ Log files are automatically saved to the desktop with sequential numbering:
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
-
-## 📄 License
-
-This project is provided as-is for educational and administrative purposes.
-
-## ⚡ Quick Tips
-
-- Press `L` after bulk rotation to save logs immediately
-- Always verify protected accounts before bulk operations
-- Use silent mode when PowerShell transcript logging is enabled
-- Keep your encryption keys secure and memorable
-- Test password changes on a non-critical account first
-
-## 🆘 Troubleshooting
-
-**Problem**: "Access Denied" errors
-- **Solution**: Ensure you're running PowerShell as Administrator
-
-**Problem**: Can't rotate domain accounts
-- **Solution**: This script only supports local accounts, not domain accounts
-
-**Problem**: Forgot encryption key
-- **Solution**: XOR encryption keys cannot be recovered. Use plaintext export as fallback
-
-**Problem**: Script execution policy errors
-- **Solution**: Run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
-
----
-
-**Made with ❤️ for System Administrators**
