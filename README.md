@@ -44,40 +44,35 @@ EzRotate is a PowerShell-based password rotation tool designed to help system ad
 
 ## 📸 Screenshots
 
-### Main Menu
-![Main Menu](readmeimages/image6.png)
-
-The main menu provides six core functions plus a quit option, making it easy to navigate through different password rotation tasks.
-
 ### Bulk Password Rotation
-![Bulk Rotation](readmeimages/image3.png)
+![Bulk Rotation](readmeimages/image.png)
 
 Rotate passwords for multiple users at once with scope options (enabled users only or all users). The script provides real-time feedback on successful rotations, failures, and protected accounts.
 
-### Rotation Summary
+### Rotation Summary and Export Options
 ![Rotation Summary](readmeimages/image2.png)
 
 After bulk rotation, view a summary of successful rotations, failed attempts, and skipped protected accounts.
-
-### Export Options
-![Export Options](readmeimages/image2.png)
-
 Choose between XOR encrypted exports (for obfuscation) or plaintext exports, with options for TXT files, CSV files, or both.
 
-### Encrypted Log Output
-![Encrypted Log](readmeimages/image.png)
-
-Encrypted logs use XOR encryption with Base64 encoding for credential obfuscation, protecting against casual viewing.
-
 ### Plaintext Log Output
-![Plaintext Log](readmeimages/image4.png)
+![Plaintext Log](readmeimages/image6.png)
 
 Plaintext logs provide clear, readable records of password rotations with timestamps for audit purposes.
 
-### Password Rotation Confirmation
-![Rotation Confirmation](readmeimages/image5.png)
+### XOR Roatation Summary
+![Encrypted Rotation](readmeimages/image5.png)
 
-Individual account rotations show the new password and provide immediate feedback on success.
+XORs the rotated credentials by a XOR key input specified by the user.  (Disclaimer: This can be bruteforced and is only a mild form of security)
+
+### XOR Log Output
+![Encrypted Log](readmeimages/image3.png)
+
+"Encrypted" logs use XOR encryption with Base64 encoding for credential obfuscation, protecting against casual viewing.
+### Silent Password Rotation
+![Rotation Confirmation](readmeimages/image4.png)
+
+Rotates credentials without outputting pertinent information to console avoiding powershell logging detection.
 
 ## 🔧 Usage
 
