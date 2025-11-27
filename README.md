@@ -56,7 +56,7 @@ After bulk rotation, view a summary of successful rotations, failed attempts, an
 Choose between XOR encrypted exports (for obfuscation) or plaintext exports, with options for TXT files, CSV files, or both.
 
 ### Plaintext Log Output
-![Plaintext Log](readmeimages/image6.png)
+![Plaintext Log](readmeimages/image3.png)
 
 Plaintext logs provide clear, readable records of password rotations with timestamps for audit purposes.
 
@@ -66,7 +66,7 @@ Plaintext logs provide clear, readable records of password rotations with timest
 XORs the rotated credentials by a XOR key input specified by the user.  (Disclaimer: This can be bruteforced and is only a mild form of security)
 
 ### XOR Log Output
-![Encrypted Log](readmeimages/image3.png)
+![Encrypted Log](readmeimages/image6.png)
 
 "Encrypted" logs use XOR encryption with Base64 encoding for credential obfuscation, protecting against casual viewing.
 ### Silent Password Rotation
